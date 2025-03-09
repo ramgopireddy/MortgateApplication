@@ -1,0 +1,32 @@
+schemaVersion: 2.2.2
+metadata:
+  name: mortgage-cobol-demo
+components:
+  - name: tools
+    container:
+      image: registry.redhat.io/devspaces/server-rhel9:latest
+      endpoints: {}
+      cpuLimit: '4'
+      cpuRequest: '1'
+      memoryLimit: '4GG'
+      memoryRequest: '2G'
+      mountSources: true
+commands:
+  - id: 1-package
+    exec:
+      label: "1. Package the application"
+      component: tools
+      workingDir: ${PROJECTS_ROOT}/quarkus-quickstarts/getting-started
+      commandLine: "mvn package"
+      group:
+        kind: build
+        isDefault: true
+  - id: 2-startdev
+    exec:
+      label: "2. Start Development mode (Hot reload + debug)"
+      component: tools
+      workingDir: ${PROJECTS_ROOT}/quarkus-quickstarts/getting-started
+      commandLine: "mvn compile quarkus:dev"
+      group:
+        kind: run
+        isDefault: true
