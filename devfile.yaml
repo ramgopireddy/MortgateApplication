@@ -4,7 +4,7 @@ metadata:
 components:
   - name: tools
     container:
-      image: registry.redhat.io/devspaces/server-rhel9:latest
+      image: registry.redhat.io/devspaces/udi-rhel9:latest
       endpoints: {}
       cpuLimit: '4'
       cpuRequest: '1'
