@@ -11,6 +11,13 @@ components:
       memoryLimit: '4G'
       memoryRequest: '2G'
       mountSources: true
+    - type: chePlugin
+      reference: https://raw.githubusercontent.com/IBM/zopeneditor-about/master/che/plugins/z-open-editor.yaml
+      alias: wazi-developer
+      preferences:
+        Zowe-Temp-Folder-Location: '{"folderPath": "/projects"}'
+        zopeneditor.zapp.useDefaultOnlineZappSchema: true
+        zopeneditor.zcodeformat.useDefaultOnlineZCodeFormatSchema: true
 commands:
   - id: 1-package
     exec:
