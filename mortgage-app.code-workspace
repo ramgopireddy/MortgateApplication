@@ -1,4 +1,9 @@
 {
+	"folders": [
+		{
+			"path": "."
+		}
+	],
 	"extensions": {
 		"recommendations": [
             "IBM.zopeneditor"
