@@ -1,9 +1,14 @@
 schemaVersion: 2.2.2
 metadata:
   name: mortgage-cobol-demo
-attributes:  
-  .che/che-theia-plugins.yaml: |  
-    - id: redhat/java
+projects:
+- name: MortgageApplication
+  git:
+    checkoutFrom:
+      remote: origin
+      revision: main
+    remotes:
+      origin: https://github.com/ramgopireddy/MortgateApplication.git
 components:
   - name: tools
     container:
@@ -14,6 +19,11 @@ components:
       memoryLimit: '4G'
       memoryRequest: '2G'
       mountSources: true
+      env:
+      - name: SHELL
+        value: "/bin/zsh"
+      - name: VSCODE_DEFAULT_WORKSPACE
+        value: "/projects/MortgageApplication/mortgage-app.code-workspace"
 commands:
   - id: 1-package
     exec:
