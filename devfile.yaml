@@ -1,14 +1,6 @@
 schemaVersion: 2.2.2
 metadata:
   name: mortgage-cobol-demo
-projects:
-- name: mortgageapplication
-  git:
-    checkoutFrom:
-      remote: origin
-      revision: main
-    remotes:
-      origin: https://github.com/ramgopireddy/MortgateApplication.git
 components:
   - name: tools
     container:
