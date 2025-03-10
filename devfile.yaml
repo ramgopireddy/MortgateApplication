@@ -2,7 +2,7 @@ schemaVersion: 2.2.2
 metadata:
   name: mortgage-cobol-demo
 projects:
-- name: MortgageApplication
+- name: mortgageapplication
   git:
     checkoutFrom:
       remote: origin
