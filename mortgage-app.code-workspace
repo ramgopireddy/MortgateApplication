@@ -1,10 +1,4 @@
 {
-	"folders": [
-		{
-			"name": "mortgage-app",
-			"path": "/projects/mortgageapplication"
-		}
-	],
 	"extensions": {
 		"recommendations": [
             		"IBM.zopeneditor",
