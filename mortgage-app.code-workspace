@@ -1,0 +1,10 @@
+{
+	"extensions": {
+		"recommendations": [
+            "IBM.zopeneditor"
+		]
+	},
+	"settings": {
+		"workbench.colorTheme": "Light (Visual Studio)",
+	}
+}
