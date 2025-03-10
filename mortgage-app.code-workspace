@@ -6,9 +6,8 @@
 	],
 	"extensions": {
 		"recommendations": [
-            		"IBM.zopeneditor",
-			"broadcommfd.explorer-for-endevor"
-		]
+            		"IBM.zopeneditor"
+	]
 	},
 	"settings": {
 		"workbench.colorTheme": "Light (Visual Studio)",
