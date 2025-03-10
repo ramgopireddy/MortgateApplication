@@ -21,7 +21,7 @@ components:
       mountSources: true
       env:
       - name: SHELL
-        value: "/bin/zsh"
+        value: "/bin/bash"
       - name: VSCODE_DEFAULT_WORKSPACE
         value: "/projects/MortgageApplication/mortgage-app.code-workspace"
 commands:
