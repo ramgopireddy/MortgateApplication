@@ -96,7 +96,6 @@
                WHEN EIBCALEN = ZERO
       * First time in - Show Screen
                    PERFORM A100-PROCESS-MAP
-                   PERFORM A100-PROCESS-MAP 
 
                WHEN EIBAID = DFHCLEAR
       * Process CLEAR key
